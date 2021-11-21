@@ -2,4 +2,13 @@
 layout: zakladni
 ---
 
-<h1>Zkouška úvodní stránky</h1>
+<div class="index__obsah">
+
+    <h2>Všechny filmy</h2>
+
+    <ul class="movie-list">
+        {% for film in filmy %}
+            <li class="movie-list__item"><a class="movie-list__link" href="/film/{{ film.nazev | slug }}">{{ film.nazev }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

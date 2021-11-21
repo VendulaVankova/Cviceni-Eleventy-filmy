@@ -1,2 +1,32 @@
 @import 'obecne';
 @import 'komponenty/hlavicka.scss';
+
+.index__obsah {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+.movie-list {
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.movie-list__item {
+    color: #3d5afe;
+    padding: 0.3em 0;
+}
+
+.movie-list__link {
+    color: #3d5afe;
+    text-decoration: none;
+}
