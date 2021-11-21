@@ -1,3 +1,26 @@
+html {
+  box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.hlavicka {
+  background-color: #9c27b0;
+  padding: 15px 0;
+}
+
+.hlavicka__obsah {
+  max-width: 50rem;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=index.css.map */
