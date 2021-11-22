@@ -1,0 +1,20 @@
+<footer class="paticka">
+    <div class="paticka__obsah">
+      <div class="paticka__column">
+        <h2 class="paticka__title">Podobné weby</h2>
+            <ul class="paticka__list">
+                {% for podobnyWeb in podobneWeby %}
+                    <li class="paticka-list__item"><a class="paticka-list__link" href="{{ podobnyWeb.adresa }}">{{ podobnyWeb.nazev }}</a></li>
+                {% endfor %}
+            </ul>
+      </div>
+      <div class="paticka__column">
+        <h2 class="paticka__title">Obecné</h2>
+            <ul class="paticka__list"
+                    <li class="paticka-list__item"><a class="paticka-list__link" href="/puvod-dat/">Původ dat</a></li>
+                    <li class="paticka-list__item"><a class="paticka-list__link" href="https://11ty.dev/">Eleventy dokumentace</a></li>
+                    <li class="paticka-list__item"><a class="paticka-list__link" href="https://github.com/Czechitas-podklady-WEB/Cviceni-Eleventy-filmy">Zadání cvičení</a></li>
+            </ul>
+      </div>
+    </div>
+</header>

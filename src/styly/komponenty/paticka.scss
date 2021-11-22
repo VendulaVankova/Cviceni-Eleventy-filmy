@@ -1,0 +1,30 @@
+.paticka {
+	background-color: #fafafa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.paticka__obsah {
+    display: flex;
+    gap: 7rem;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.paticka__column {
+    margin: 0;
+}
+
+.paticka__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.paticka-list__link {
+    color: #464444;
+    text-decoration: none;
+}

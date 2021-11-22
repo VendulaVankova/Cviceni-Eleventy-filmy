@@ -7,4 +7,22 @@ pagination:
 permalink: "/film/{{ film.nazev | slug }}/"
 ---
 
-<h2>{{ film.nazev }}</h2>
+<div class="film__layout">
+
+    <h2>{{ film.nazev }}</h2>
+
+    <dl class="film__details">
+        <dt class="film__term">Rok:</dt>
+        <dd></dd>
+        <dt class="film__term">Země:</dt>
+        <dd></dd>
+        <dt class="film__term">Žánr:</dt>
+        <dd></dd>
+        <dt class="film__term">Délka:</dt>
+        <dd></dd>
+    </dl>
+
+    <h3>Obsah</h3>
+    <p class="film__description"></p>
+
+</div>

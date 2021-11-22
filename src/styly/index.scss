@@ -1,5 +1,9 @@
 @import 'obecne';
 @import 'komponenty/hlavicka.scss';
+@import 'komponenty/paticka.scss';
+@import 'komponenty/puvod-dat.scss';
+@import 'film.scss';
+
 
 .index__obsah {
     max-width: 50rem;
@@ -16,7 +20,7 @@ h2 {
 .movie-list {
     list-style-type: square;
     margin: 0;
-    padding: 0;
+    padding-left: 1rem;
 }
 
 
