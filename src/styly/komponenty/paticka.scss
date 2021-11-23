@@ -1,6 +1,6 @@
 .paticka {
 	background-color: #fafafa;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     margin-top: 2rem;
@@ -27,4 +27,11 @@
 .paticka-list__link {
     color: #464444;
     text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    .paticka__obsah {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }

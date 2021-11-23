@@ -26,7 +26,7 @@ body {
 
 .paticka {
   background-color: #fafafa;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   margin-top: 2rem;
@@ -55,6 +55,12 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 450px) {
+  .paticka__obsah {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
 .obsah-stranky {
   max-width: 50rem;
   width: 100%;
@@ -70,12 +76,16 @@ body {
 }
 
 .film__term {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .film__details {
   display: grid;
   grid-template-columns: 3rem 1fr;
+}
+
+h3 {
+  margin-top: 2em;
 }
 
 .index__obsah {
