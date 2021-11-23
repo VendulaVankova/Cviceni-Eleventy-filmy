@@ -12,17 +12,13 @@ permalink: "/film/{{ film.nazev | slug }}/"
     <h2>{{ film.nazev }}</h2>
 
     <dl class="film__details">
-        <dt class="film__term">Rok:</dt>
-        <dd></dd>
-        <dt class="film__term">Země:</dt>
-        <dd></dd>
-        <dt class="film__term">Žánr:</dt>
-        <dd></dd>
-        <dt class="film__term">Délka:</dt>
-        <dd></dd>
+        <dt class="film__term">Rok:</dt><dd>{{ film.rok }}</dd>
+        <dt class="film__term">Země:</dt><dd>{{ film.zeme | join (', ')}}</dd>
+        <dt class="film__term">Žánr:</dt><dd>{{ film.zanr | join (', ')}}</dd>
+        <dt class="film__term">Délka:</dt><dd>{{ film.delka }}</dd>
     </dl>
 
     <h3>Obsah</h3>
-    <p class="film__description"></p>
+    <p class="film__description">{{ film.obsah.text }}</p>
 
 </div>
